@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'hello',
@@ -7,4 +8,15 @@ import { Component, Input } from '@angular/core';
 })
 export class HelloComponent  {
   @Input() name: string;
+  
+  constructor(private activatedRoute: ActivatedRoute) {}
+
+  ngOnInit() {
+    // Note: Below 'queryParams' can be replaced with 'params' depending on your requirements
+    this.activatedRoute.queryParams.subscribe(params => {
+        const userId = params['userId'];
+        this.name = userId;
+        console.log(userId);
+      });
+  }  
 }

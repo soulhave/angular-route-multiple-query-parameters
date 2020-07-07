@@ -1,3 +1,3 @@
-# angular-j2sb89
+# angular-multiple-query-param
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-j2sb89)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-multiple-query-param)
